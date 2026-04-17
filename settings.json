@@ -1,6 +1,5 @@
 {
-  "showDate": true,
-  "showTime": true,
+  "accentColor": "#D50000",
   "theme": "dark",
   "showWeather": false,
   "weatherCity": "",

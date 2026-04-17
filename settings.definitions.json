@@ -12,17 +12,11 @@
           { "value": "light", "label": "Light" }
         ]
       },
-      "showDate": {
-        "type": "boolean",
-        "default": true,
-        "label": "Show Date",
-        "description": "Display the date in the format 'DD Month, YYYY'"
-      },
-      "showTime": {
-        "type": "boolean",
-        "default": true,
-        "label": "Show Time",
-        "description": "Display the current time"
+      "accentColor": {
+        "type": "string",
+        "default": "#448AFF",
+        "label": "Accent Color",
+        "description": "Color used for gauge arcs and highlighted clock text"
       }
     }
   },

@@ -1,7 +1,9 @@
 const defaults = {
-    showDate: true,
-    showTime: true,
     theme: 'dark',
+    accentColor: '#D50000',
+    showWeather: false,
+    weatherCity: "",
+    temperatureUnit: "celsius"
 };
 
 export function useSettings() {
