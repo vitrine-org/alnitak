@@ -1,0 +1,42 @@
+{
+  "id": "dev.vitrine.alnitak",
+  "name": "Alnitak",
+  "version": "2.0.0",
+  "author": "Emanuele Frascella",
+  "description": "The date as a 3×3 letter grid, the time in words and the weather, in Hack",
+  "homepage": "https://github.com/vitrine-widgets/alnitak",
+  "minEngine": "2.0.0",
+  "fonts": ["assets/fonts/Hack-Regular.ttf", "assets/fonts/Hack-Bold.ttf"],
+  "widgets": [
+    {
+      "id": "date",
+      "name": "Date grid",
+      "description": "Month, day and weekday as a 3×3 grid of letters",
+      "entry": "src/date/index.tsx",
+      "settings": "src/date/settings.json",
+      "preview": "src/date/preview.png",
+      "size": { "default": [3, 3], "min": [2, 2], "max": [6, 6] },
+      "permissions": []
+    },
+    {
+      "id": "wordclock",
+      "name": "Word clock",
+      "description": "The time in words, minutes in the accent color",
+      "entry": "src/wordclock/index.tsx",
+      "settings": "src/wordclock/settings.json",
+      "preview": "src/wordclock/preview.png",
+      "size": { "default": [4, 1], "min": [3, 1], "max": [8, 2] },
+      "permissions": []
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "description": "Today's weather in three monospaced lines, from Open-Meteo",
+      "entry": "src/weather/index.tsx",
+      "settings": "src/weather/settings.json",
+      "preview": "src/weather/preview.png",
+      "size": { "default": [6, 2], "min": [5, 1], "max": [10, 3] },
+      "permissions": ["net:api.open-meteo.com", "net:geocoding-api.open-meteo.com"]
+    }
+  ]
+}

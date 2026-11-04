@@ -1,32 +1,37 @@
-# vitrine-alnitak
+# Alnitak for Vitrine
 
-A theme for [Vitrine](https://github.com/felixstrobel/vitrine), inspired by [Mond](https://visualskins.com/skin/mond), a theme for [Rainmeter](https://www.rainmeter.net/).
+Monospaced widgets for [Vitrine](https://github.com/vitrine-widgets/vitrine) in
+[Hack](https://sourcefoundry.org/hack/): the date as a 3×3 grid of letters, the time in words with
+the minutes in the accent color, and the weather in three centered lines, drawn straight on your
+wallpaper.
 
-![Theme Preview](.github/assets/preview.png)
+| Widget | Size | |
+|---|---|---|
+| **Date grid**: month, day and weekday, the first letter in the accent color | 2×2 to 6×6 | ![Date grid](src/date/preview.png) |
+| **Word clock**: “Eleven Forty One” under a thin rule | 3×1 to 8×2 | ![Word clock](src/wordclock/preview.png) |
+| **Weather**: today's conditions, low, high and feels-like from [Open-Meteo](https://open-meteo.com), works offline from cache | 5×1 to 10×3 | ![Weather](src/weather/preview.png) |
 
-## Features
+Every widget has light or dark text, an accent color (or the Windows one), a soft text shadow and
+an optional acrylic card for busy wallpapers.
 
-- Date displayed as a 3×3 letter grid ([Hack](https://sourcefoundry.org/hack/) font)
-- Time displayed as English words (e.g. *Three* **Forty-Two**)
-- Configurable accent color
-- Optional weather conditions via [Open-Meteo](https://open-meteo.com/) (no API key required)
-- Dark and light theme
+## Install
 
-## Settings
+Download `alnitak-2.0.0.vitrine` from the [latest release](https://github.com/vitrine-widgets/alnitak/releases/latest)
+and double-click it. Vitrine adds the widgets to its gallery.
 
-| Setting | Type | Default | Description |
-|---|---|---|---|
-| `theme` | string | `dark` | Color scheme — `dark` or `light` |
-| `accentColor` | string | `#448AFF` | Accent color for the first date letter and the minutes |
-| `showWeather` | boolean | `false` | Show current weather conditions |
-| `weatherCity` | string | — | City used to fetch weather data |
-| `temperatureUnit` | string | `celsius` | `celsius` or `fahrenheit` |
+The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-widgets/alnitak/tree/v1) branch.
 
 ## Build
 
 ```sh
-make install   # install dependencies (runs inside Docker, Node 20)
-make build     # produce dist/ (runs inside Docker, Node 20)
+npm install
+npm run pack      # → alnitak-2.0.0.vitrine
 ```
 
-Requires Docker.
+`package.json` points `@vitrine/sdk` at `file:../../vitrine-sdk` for local builds; releases use
+`github:vitrine-widgets/sdk#v2.0.0`. Preview a widget with
+`vitrine render dist date --cells 3x3 --scale 2 --out date.png`.
+
+## License
+
+MIT. Hack is bundled under its own MIT and Bitstream Vera licenses (see `LICENSE`).

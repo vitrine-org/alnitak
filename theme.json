@@ -1,7 +1,0 @@
-{
-  "name": "Alnitak",
-  "description": "A theme based on the Conky theme Alnitak by closebox73x",
-  "entry": "theme.js",
-  "version": "1.0.0",
-  "author": "Emanuele Frascella"
-}

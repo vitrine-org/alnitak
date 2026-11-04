@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Appearance",
+    "settings": {
+      "theme": {
+        "type": "string",
+        "default": "dark",
+        "label": "Text color",
+        "description": "Light text suits dark wallpapers, dark text light ones",
+        "options": [
+          {
+            "value": "dark",
+            "label": "Light (dark wallpaper)"
+          },
+          {
+            "value": "light",
+            "label": "Dark (light wallpaper)"
+          },
+          {
+            "value": "auto",
+            "label": "Follow Windows theme"
+          }
+        ]
+      },
+      "accent": {
+        "type": "string",
+        "default": "#448AFF",
+        "label": "Accent color",
+        "description": "Hex color for the highlighted letter and minutes, or system for the Windows accent",
+        "pattern": "^(system|#[0-9a-fA-F]{6})$",
+        "patternMessage": "Use system or a hex color such as #448AFF"
+      },
+      "background": {
+        "type": "string",
+        "default": "none",
+        "label": "Background",
+        "options": [
+          {
+            "value": "none",
+            "label": "None (on the wallpaper)"
+          },
+          {
+            "value": "acrylic",
+            "label": "Acrylic card"
+          }
+        ]
+      },
+      "shadow": {
+        "type": "boolean",
+        "default": true,
+        "label": "Text shadow",
+        "description": "A soft shadow for legibility on bright or busy wallpapers",
+        "visibleWhen": {
+          "key": "background",
+          "value": "none"
+        }
+      }
+    }
+  }
+]
