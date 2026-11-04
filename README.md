@@ -15,7 +15,7 @@ an optional acrylic card for busy wallpapers.
 
 ## Install
 
-Download `alnitak-2.0.0.vitrine` from the [latest release](https://github.com/vitrine-org/alnitak/releases/latest)
+Download `alnitak-2.2.1.vitrine` from the [latest release](https://github.com/vitrine-org/alnitak/releases/latest)
 and double-click it. Vitrine adds the widgets to its gallery.
 
 The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-org/alnitak/tree/v1) branch.
@@ -24,12 +24,14 @@ The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-org/alnitak/t
 
 ```sh
 npm install
-npm run pack      # → alnitak-2.0.0.vitrine
+npm run pack      # → alnitak-2.2.1.vitrine
 ```
 
 `package.json` points `@vitrine/sdk` at `file:../../vitrine-sdk` for local builds; releases use
 `github:vitrine-org/sdk#v2.1.0`. Preview a widget with
 `vitrine render dist date --cells 3x3 --scale 2 --out date.png`.
+
+Regenerate every `src/<widget>/preview.png` after `npm run build` with `py scripts/previews.py` (needs Pillow and `vitrine.exe`): same theme, accent and default size for all widgets, on a transparent background with the text shadow, so the gallery, store and website show them alike on a neutral tile.
 
 ## License
 
