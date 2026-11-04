@@ -41,7 +41,7 @@ function Weather() {
             )}
           </text>
           {s().showDivider ? (
-            <view style={{ width: Math.round(Math.min(180 * k(), size().width * 0.5)), height: Math.max(2, Math.round(2 + k())), flexShrink: 0, background: c.text, marginTop: Math.round(12 * k()) }} />
+            <view style={{ width: Math.round(Math.min(180 * k(), size().width * 0.5)), height: Math.max(2, Math.round(2 + k())), flexShrink: 0, background: c.text, marginTop: Math.round(12 * k()), ...(c.shadow ? { boxShadow: c.dark ? "0 1px 6px rgba(0, 0, 0, 0.35)" : "0 0 6px rgba(255, 255, 255, 0.45)" } : {}) }} />
           ) : null}
         </>
       )}
