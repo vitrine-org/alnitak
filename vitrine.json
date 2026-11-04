@@ -1,12 +1,13 @@
 {
   "id": "dev.vitrine.alnitak",
   "name": "Alnitak",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "author": "Emanuele Frascella",
   "description": "The date as a 3×3 letter grid, the time in words and the weather, in Hack",
   "homepage": "https://github.com/vitrine-org/alnitak",
   "minEngine": "2.0.0",
   "fonts": ["assets/fonts/Hack-Regular.ttf", "assets/fonts/Hack-Bold.ttf"],
+  "icon": "icon.png",
   "widgets": [
     {
       "id": "date",

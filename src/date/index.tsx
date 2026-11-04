@@ -3,6 +3,9 @@ import { formatDate, mount, useClock, useSettings, useSize } from "@vitrine/sdk"
 import { Surface, clamp, useLook } from "../shared/look";
 import { MONO } from "../shared/fonts";
 
+// The original themes are English: dates are never translated.
+const EN = "en-US";
+
 // Hack is monospaced: 0.602 em per glyph. Gaps follow the original 2.5rem × 1.5rem on 5.653rem.
 const ADVANCE = 0.602;
 const COL_GAP = 2.5 / 5.653;
@@ -25,7 +28,7 @@ function DateGrid() {
   // └───┴───┴───┘
   const cells = () => {
     const d = now();
-    return [...three(formatDate(d, "MMM")), "-", ...formatDate(d, "DD"), ...three(formatDate(d, "ddd"))];
+    return [...three(formatDate(d, "MMM", EN)), "-", ...formatDate(d, "DD", EN), ...three(formatDate(d, "ddd", EN))];
   };
   const pad = () => (l().card ? 16 : 6);
   const fs = () => {
