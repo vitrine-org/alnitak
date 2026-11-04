@@ -1,12 +1,52 @@
 [
   {
-    "title": "Word clock",
+    "title": "Layout",
     "settings": {
+      "showWeather": {
+        "type": "boolean",
+        "default": true,
+        "label": "Show weather",
+        "description": "Today's weather in three lines under the time"
+      },
       "showDivider": {
         "type": "boolean",
         "default": true,
-        "label": "Show divider",
-        "description": "A rule above the time, as under the date grid of the original theme"
+        "label": "Show dividers",
+        "description": "A rule above the time and one below the weather, as in the original theme"
+      }
+    }
+  },
+  {
+    "title": "Weather",
+    "settings": {
+      "city": {
+        "type": "string",
+        "default": "London",
+        "label": "City",
+        "description": "Any city name; the first match from Open-Meteo is used",
+        "visibleWhen": {
+          "key": "showWeather",
+          "value": true
+        }
+      },
+      "units": {
+        "type": "string",
+        "default": "celsius",
+        "label": "Temperature unit",
+        "options": [
+          {
+            "value": "celsius",
+            "label": "Celsius (°C)"
+          },
+          {
+            "value": "fahrenheit",
+            "label": "Fahrenheit (°F)"
+          }
+        ],
+        "visibleWhen": {
+          "key": "showWeather",
+          "value": true
+        }
       }
     }
   },

@@ -8,8 +8,7 @@ wallpaper.
 | Widget | Size | |
 |---|---|---|
 | **Date grid**: month, day and weekday, the first letter in the accent color | 2×2 to 6×6 | ![Date grid](src/date/preview.png) |
-| **Word clock**: “Eleven Forty One” under a thin rule | 3×1 to 8×2 | ![Word clock](src/wordclock/preview.png) |
-| **Weather**: today's conditions, low, high and feels-like from [Open-Meteo](https://open-meteo.com), works offline from cache | 5×1 to 10×3 | ![Weather](src/weather/preview.png) |
+| **Word clock & weather**: “Eleven Forty One” between two rules, with today's conditions, low, high and feels-like from [Open-Meteo](https://open-meteo.com) underneath (works offline from cache; the weather can be turned off) | 5×2 to 12×5 | ![Word clock & weather](src/wordclock/preview.png) |
 
 Every widget has light or dark text, an accent color (or the Windows one), a soft text shadow and
 an optional acrylic card for busy wallpapers.
