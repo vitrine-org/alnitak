@@ -1,9 +1,9 @@
 {
   "id": "dev.vitrine.alnitak",
   "name": "Alnitak",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Emanuele Frascella",
-  "description": "The date as a 3×3 letter grid, the time in words, weather, calendar, to-dos, system meters and a countdown, in Hack",
+  "description": "The date as a 3×3 letter grid, the time in words and the weather, in Hack",
   "homepage": "https://github.com/vitrine-org/alnitak",
   "minEngine": "2.0.0",
   "fonts": ["assets/fonts/Hack-Regular.ttf", "assets/fonts/Hack-Bold.ttf"],
@@ -37,47 +37,6 @@
       "preview": "src/weather/preview.png",
       "size": { "default": [6, 2], "min": [5, 1], "max": [10, 3] },
       "permissions": ["net:api.open-meteo.com", "net:geocoding-api.open-meteo.com"]
-    },
-    {
-      "id": "calendar",
-      "name": "Calendar",
-      "description": "The month as a monospaced grid, today in reverse video",
-      "entry": "src/calendar/index.tsx",
-      "settings": "src/calendar/settings.json",
-      "preview": "src/calendar/preview.png",
-      "size": { "default": [3, 3], "min": [3, 3], "max": [6, 6] },
-      "permissions": []
-    },
-    {
-      "id": "todo",
-      "name": "To do",
-      "description": "A terminal-style checklist: [x] to tick, [+] to add",
-      "entry": "src/todo/index.tsx",
-      "settings": "src/todo/settings.json",
-      "preview": "src/todo/preview.png",
-      "size": { "default": [3, 3], "min": [3, 2], "max": [6, 6] },
-      "interactive": true,
-      "permissions": []
-    },
-    {
-      "id": "system",
-      "name": "System",
-      "description": "CPU, memory, disk, battery and network as htop-style meters",
-      "entry": "src/system/index.tsx",
-      "settings": "src/system/settings.json",
-      "preview": "src/system/preview.png",
-      "size": { "default": [4, 2], "min": [3, 2], "max": [8, 4] },
-      "permissions": ["system.cpu", "system.memory", "system.drives", "system.network", "system.battery"]
-    },
-    {
-      "id": "countdown",
-      "name": "Countdown",
-      "description": "Days to a date in words, the number in the accent color",
-      "entry": "src/countdown/index.tsx",
-      "settings": "src/countdown/settings.json",
-      "preview": "src/countdown/preview.png",
-      "size": { "default": [4, 1], "min": [3, 1], "max": [8, 2] },
-      "permissions": []
     }
   ]
 }

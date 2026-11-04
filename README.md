@@ -10,17 +10,13 @@ wallpaper.
 | **Date grid**: month, day and weekday, the first letter in the accent color | 2×2 to 6×6 | ![Date grid](src/date/preview.png) |
 | **Word clock**: “Eleven Forty One” under a thin rule | 3×1 to 8×2 | ![Word clock](src/wordclock/preview.png) |
 | **Weather**: today's conditions, low, high and feels-like from [Open-Meteo](https://open-meteo.com), works offline from cache | 5×1 to 10×3 | ![Weather](src/weather/preview.png) |
-| **Calendar**: the month as a monospaced grid, today in reverse video | 3×3 to 6×6 | ![Calendar](src/calendar/preview.png) |
-| **To do**: a terminal-style checklist, `[x]` to tick, `[+]` to add (or seed it from the settings) | 3×2 to 6×6 | ![To do](src/todo/preview.png) |
-| **System**: CPU, memory, disk, battery and network as htop-style meters | 3×2 to 8×4 | ![System](src/system/preview.png) |
-| **Countdown**: “Fifty Days to Lisbon”, the number in the accent color | 3×1 to 8×2 | ![Countdown](src/countdown/preview.png) |
 
 Every widget has light or dark text, an accent color (or the Windows one), a soft text shadow and
-an optional frosted acrylic card for busy wallpapers.
+an optional acrylic card for busy wallpapers.
 
 ## Install
 
-Download `alnitak-2.1.0.vitrine` from the [latest release](https://github.com/vitrine-org/alnitak/releases/latest)
+Download `alnitak-2.0.0.vitrine` from the [latest release](https://github.com/vitrine-org/alnitak/releases/latest)
 and double-click it. Vitrine adds the widgets to its gallery.
 
 The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-org/alnitak/tree/v1) branch.
@@ -29,10 +25,11 @@ The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-org/alnitak/t
 
 ```sh
 npm install
-npm run pack      # → alnitak-2.1.0.vitrine
+npm run pack      # → alnitak-2.0.0.vitrine
 ```
 
-`package.json` takes `@vitrine/sdk` from `github:vitrine-org/sdk#v2.1.0`. Preview a widget with
+`package.json` points `@vitrine/sdk` at `file:../../vitrine-sdk` for local builds; releases use
+`github:vitrine-org/sdk#v2.1.0`. Preview a widget with
 `vitrine render dist date --cells 3x3 --scale 2 --out date.png`.
 
 ## License
