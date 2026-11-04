@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "author": "Emanuele Frascella",
   "description": "The date as a 3×3 letter grid, the time in words and the weather, in Hack",
-  "homepage": "https://github.com/vitrine-widgets/alnitak",
+  "homepage": "https://github.com/vitrine-org/alnitak",
   "minEngine": "2.0.0",
   "fonts": ["assets/fonts/Hack-Regular.ttf", "assets/fonts/Hack-Bold.ttf"],
   "widgets": [

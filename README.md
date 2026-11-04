@@ -1,6 +1,6 @@
 # Alnitak for Vitrine
 
-Monospaced widgets for [Vitrine](https://github.com/vitrine-widgets/vitrine) in
+Monospaced widgets for [Vitrine](https://github.com/vitrine-org/vitrine) in
 [Hack](https://sourcefoundry.org/hack/): the date as a 3×3 grid of letters, the time in words with
 the minutes in the accent color, and the weather in three centered lines, drawn straight on your
 wallpaper.
@@ -16,10 +16,10 @@ an optional acrylic card for busy wallpapers.
 
 ## Install
 
-Download `alnitak-2.0.0.vitrine` from the [latest release](https://github.com/vitrine-widgets/alnitak/releases/latest)
+Download `alnitak-2.0.0.vitrine` from the [latest release](https://github.com/vitrine-org/alnitak/releases/latest)
 and double-click it. Vitrine adds the widgets to its gallery.
 
-The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-widgets/alnitak/tree/v1) branch.
+The Vitrine 1 theme lives on the [`v1`](https://github.com/vitrine-org/alnitak/tree/v1) branch.
 
 ## Build
 
@@ -29,7 +29,7 @@ npm run pack      # → alnitak-2.0.0.vitrine
 ```
 
 `package.json` points `@vitrine/sdk` at `file:../../vitrine-sdk` for local builds; releases use
-`github:vitrine-widgets/sdk#v2.0.0`. Preview a widget with
+`github:vitrine-org/sdk#v2.0.0`. Preview a widget with
 `vitrine render dist date --cells 3x3 --scale 2 --out date.png`.
 
 ## License
